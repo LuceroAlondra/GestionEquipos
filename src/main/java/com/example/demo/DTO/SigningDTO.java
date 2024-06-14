@@ -1,5 +1,6 @@
 package com.example.demo.DTO;
 
+import com.example.demo.model.Player;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

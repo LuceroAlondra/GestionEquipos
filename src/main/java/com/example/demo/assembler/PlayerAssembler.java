@@ -12,16 +12,19 @@ public class PlayerAssembler {
 
     // Constructor que recibe un ModelMapper como parámetro
     public PlayerAssembler(ModelMapper modelMapper) {
+
         this.modelMapper = modelMapper;
     }
 
     // Método para convertir una entidad Player a un DTO PlayerDTO
     public PlayerDTO toDTO(Player entity) {
+
         return modelMapper.map(entity, PlayerDTO.class);
     }
 
     // Método para convertir un DTO PlayerDTO a una entidad Player
     public Player toEntity(PlayerDTO dto) {
+
         return modelMapper.map(dto, Player.class);
     }
 }

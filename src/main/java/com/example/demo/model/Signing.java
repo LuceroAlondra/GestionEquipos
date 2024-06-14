@@ -38,4 +38,8 @@ public class Signing {
             foreignKey = @ForeignKey(name = "fk_team_id"))
     private Team team;
 
+    public Signing(Player player) {
+        this.player = player;
+    }
+
 }
